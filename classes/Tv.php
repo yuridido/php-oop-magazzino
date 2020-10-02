@@ -14,6 +14,8 @@ class Tv {
         $this->quantita = $_quantita;
     }
 
+    
+
 
 
 }

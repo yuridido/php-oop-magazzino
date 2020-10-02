@@ -6,8 +6,12 @@ class SmartTv extends Tv {
     public $wifi;
 
     public function __construct($_marca, $_modello, $_prezzo, $_sistemaoperativo, $_quantita = 1) {
-        parent::__construct($_marca, $_modello, $_prezzo, $_quantita = 1)
-        $this->$sistemaOperativo = $_sistemaoperativo;
+        parent::__construct($_marca, $_modello, $_prezzo, $_quantita = 1);
+        $this->sistemaOperativo = $_sistemaoperativo;
+    }
+
+    public function getQuantita() {
+        return $this->quantita;
     }
 
 
